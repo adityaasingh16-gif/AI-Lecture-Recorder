@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Lecture Recorder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎙️ AI Lecture Recorder</h1>
+            <p>Record lectures with ease.</p>
+        </header>
+
+        <main>
+            <div class="controls">
+                <button id="btnRecord" class="btn start">Start Recording</button>
+                <button id="btnStop" class="btn stop" disabled>Stop Recording</button>
+            </div>
+            
+            <div class="status-bar">
+                <span id="statusText">Ready</span>
+                <div id="timer">00:00:00</div>
+            </div>
+
+            <div class="audio-preview">
+                <audio id="audioPlayback" controls></audio>
+            </div>
+
+            <div class="log-area" id="logArea"></div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
